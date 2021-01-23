@@ -1,0 +1,49 @@
+/*==== BRAND GUIDELINES ==== */
+.ladies { background-color: #e71d36; }
+.mens { background-color: #2ec4b6; }
+.boys { background-color: #ff9f1c; }
+.girls { background-color: #ff9f1c; }
+.brand { background-color: #011627; }
+.product { background-color: #011627; }
+.main { background-color: #011627; }
+
+/*==== STRUCTURE ==== */
+html { background-color: #ffffff; }
+body { font-family: Verdana, sans-serif !important; padding-bottom: 5em; }
+.container { max-width: 600px; margin-left: auto; margin-right: auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.footer { margin-top: 6em; height: 2em; color: #ffffff; padding: 0.5em; position: fixed; left: 0;bottom: 0; width: 100%; text-align: center; margin-top: 8px; }
+
+/*==== NAVIGATION ==== */
+.navbar { border-radius: 0px !important; width: 100%; position: sticky !important; padding: 0 !important; text-align: center; vertical-align: middle; margin-bottom: 3em; }
+.navbar a { color: #28a745 !important;  }
+.navbar p { margin: 1em; color: #f2f2f2; font-weight: bold; }
+.navbar-brand { font-size: 2em; }
+.navbar .navbar-nav li { margin: 0 4em; }
+
+/*==== HOMEPAGE ==== */
+.homepageContainer { max-width: 1000px; margin-left: auto; margin-right: auto; display: flex; flex-wrap: wrap; justify-content: center; }
+.homepageContainer .searchType { flex-basis: 40%; padding: 1.5em; text-align: center; margin: 0.5em; text-decoration: none; color: #fdfffc; }
+
+
+/*==== FORM ==== */
+.input-group { display: flex; margin-top: 1em; }
+.input-group select { flex-grow: 1; display: block; min-width: 400px; }
+.input-group input { flex-grow: 1; display: block; min-width: 200px; }
+.input-group label { display: block; text-align: left; width: 150px; }
+input[name="productMaxPrice"] { margin-left: 45px; }
+.button { border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin-top: 2em; margin-left: auto; margin-right: auto; width: 100%; }
+.searchResultTable { border-collapse: collapse; width: 100%; margin-top: 3em;}
+.searchResultTable td, .searchResultTable th { border: 1px solid #ddd; padding: 8px; }
+.searchResultTable th { padding-top: 12px; padding-bottom: 12px; text-align: left; color: #ffffff; }
+
+
+
+
+@media only screen and (max-width: 630px) {
+	.input-group { flex-wrap: wrap; }
+	.input-group select { width: 100%; min-width: 200px; height: 40px; margin-bottom: 25px;}
+	.input-group input { width: 100%; min-width: 200px; height: 40px; margin-bottom: 25px;}
+	input[name="productMaxPrice"] { margin-left: 0px; }
+
+	.footer { position: relative; margin-top: 5em; }
+}
